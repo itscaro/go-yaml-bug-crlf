@@ -12,7 +12,7 @@ func main()  {
 	var in1, in2 []byte
 	var err error
 	in1, _ = ioutil.ReadFile("lf.yaml")
-	fmt.Printf("%s\n", string(in1))
+	//fmt.Printf("%s\n", string(in1))
 	err = yaml.Unmarshal(in1, &out1)
 	fmt.Printf("%s\n", out1)
 	fmt.Printf("%s\n", err)
@@ -20,7 +20,7 @@ func main()  {
 	fmt.Println("-----")
 
 	in2, _ = ioutil.ReadFile("crlf.yaml")
-	fmt.Printf("%s\n", string(in2))
+	//fmt.Printf("%s\n", string(in2))
 	err = yaml.Unmarshal(in2, &out2)
 	fmt.Printf("%s\n", out2)
 	fmt.Printf("%s\n", err)
