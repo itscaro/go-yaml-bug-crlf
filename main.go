@@ -11,7 +11,7 @@ func main()  {
 	var out1, out2 interface{}
 	var in1, in2 []byte
 	var err error
-	in1, _ = ioutil.ReadFile("lr.yaml")
+	in1, _ = ioutil.ReadFile("lf.yaml")
 	fmt.Printf("%s\n", string(in1))
 	err = yaml.Unmarshal(in1, &out1)
 	fmt.Printf("%s\n", out1)
